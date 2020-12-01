@@ -1,0 +1,10 @@
+<% if (notice) { %>
+  <p><%= notice %></p>
+<% } %>
+
+<p>  You can also fill this form if you feel like doing so... </p>
+  <form action="/signin" enctype="multipart/form-data" method="post">
+    <input type="text" name="userMail">
+    <input type="password" name="userPassword">
+    <input type="submit" value="Iniciar sesión">
+  </form>

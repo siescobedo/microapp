@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Microapp</title>
+    <% if (env !== 'development') { %>
+      <link rel="stylesheet" href="<%= assetPath('app.css') %>">
+    <% } %>
+  </head>
+
+  <body>
+    <header>
+      <ul>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="dropbtn" id="icons"></a>
+            <div class="dropdown-content">
+              <a href="/">Inicio</a>
+              <a href="/signin">Form</a>
+            </div>
+        </li>
+      </ul>
+    </header>
+    <%- body %>
+    <script src="<%= assetPath('app.js') %>"></script>
+  </body>
+
+</html>
